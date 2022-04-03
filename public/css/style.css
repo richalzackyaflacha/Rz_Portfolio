@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body .myPortfolio {
+    font-family: 'Raleway', sans-serif;
+    background: var(--mainColor);
+    transition: .5s;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar { 
+    width: 10px; 
+}
+::-webkit-scrollbar-track {
+  	box-shadow: inset 0 0 5px grey; 
+  	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  	background: #35858B; 
+  	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: #8af8fa; 
+}
+
+
+/* ---------- Navbar ---------- */
+#navbar {
+    transition: top 0.3s;
+}
+.bg-nav {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .5s;
+}
+.nav-link {
+    padding: 3px 10px !important;
+    letter-spacing: 1px;
+}
+.navbar-nav .active {
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+.my-logo img {
+    width: 50px;
+}
+
+
+/* ----- Dark Mode ----- */
+.dark-mode #toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 160px;
+    background: var(--thirdColor);
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.3),
+                inset 0 8px 8px rgba(0, 0, 0, 0.3),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.3),
+                0px 0px 10px var(--color13);
+}
+
+/* Button Indicator */
+.dark-mode #toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(to bottom, #35858b, #072227);
+    border-radius: 50%;
+    transform: scale(.9);
+    transition: .5s;
+}
+.dark-mode #toggle.active-dm .indicator {
+    left: 25px;
+    background-image: linear-gradient(to bottom, #ddfeff, #AEFEFF);
+}
+
+/* Dark Indicator */
+.dark-mode .indicator .icon-d {
+    color: #AEFEFF;
+    font-size: 19px;
+    position: relative;
+    margin: 3px 3px;
+    transition: .5s;
+}
+.dark-mode #toggle.active-dm .indicator .icon-d {
+    display: none;
+}
+
+/* Light Indicator */
+.dark-mode .indicator .icon-l {
+    color: #072227;
+    font-size: 19px;
+    position: relative;
+    margin: 3px 3px;
+    display: none;
+    transition: .5s;
+}
+.dark-mode #toggle.active-dm .indicator .icon-l {
+    display: block;
+}
+
+
+/* ----- Button To Top ----- */
+#button-top button{
+    position: fixed;
+    z-index: 99;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px 13px 2px 13px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #35858b, #072227);
+    box-shadow: 0px 0px 15px rgba(174, 254, 255, 0.5);
+    color: var(--color13);
+    font-size: 23px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    animation: btnTop .8s linear alternate infinite;
+}
+@keyframes btnTop {
+    0% { bottom: 20px; }
+    100% { bottom: 30px; }
+}
+#button-top button.active-btnt {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ----- Navbar Bottom ----- */
+#navbar-bottom {
+    display: none;
+}
+.navbar-bottom {
+    background-color: #072227;
+    box-shadow: 0 -2px 5px var(--color13);
+}
+.navbar-bottom .nav-link {
+    font-size: 22px;
+}
+
+
+/* ----- Modal Image ----- */
+.modal {
+    display: none; 
+    z-index: 1; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9); 
+    padding: 100px 0px;
+}
+/* Image Content */
+img.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 70%;
+    max-height: 100%;
+    position: relative;
+}
+.modal-content, .close{ 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+/* Modal Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ----- Color & Dark Mode ----- */
+:root {
+    --mainColor: white;
+    --secondColor: black;
+    --thirdColor: #747474;
+
+    --color1: #072227;
+    --color2: #072227;
+    --color3: #072227;
+    --color4: #072227;
+
+    --color5: #35858b;
+    --color6: #35858b;
+    --color7: #35858b;
+    --color8: #35858b;
+
+    --color9: #AEFEFF;
+    --color10: #AEFEFF;
+    --color11: #AEFEFF;
+    --color12: #AEFEFF;
+
+    --color13: White;
+    --color14: White;
+    --color15: White;
+}
+
+.dark-theme {
+    --mainColor: #26292b;
+    --secondColor: white;
+    --thirdColor: rgb(230, 230, 230);
+
+    --color1: #35858b;
+    --color2: #AEFEFF;
+    --color3: white;
+    --color4: black;
+
+    --color5: white;
+    --color6: #AEFEFF;
+    --color7: #072227;
+    --color8: black;
+
+    --color9: white;
+    --color10: #35858b;
+    --color11: #072227;
+    --color12: black;
+
+    --color13: #AEFEFF;
+    --color14: #35858b;
+    --color15: #072227;
+}
+
+
+/* --------------- Mobile --------------- */
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    
+    /* ----- Navbar Top ----- */
+    .my-logo img {
+        width: 40px;
+    }
+    /* Navbar Menu Hide */
+    .menu-nav-top {
+        display: none;
+    }
+    /* Background Navbar Top */
+    .bg-nav {
+        background: #072227;
+        margin-top: -2px;
+        box-shadow: 0px 2px 5px var(--color13);
+    } 
+
+    
+    /* ----- Navbar Bottom ----- */
+    #navbar-bottom {
+        display: block;
+    }
+    /* Icon Active */
+    .navbar-nav .active {
+        color: var(--color13) !important;
+        border-bottom: 2px solid var(--color13);
+    }
+
+
+    /* Button To Top */
+    #button-top button{
+        right: 10px!important;
+        margin-bottom: 45px;
+    }
+}

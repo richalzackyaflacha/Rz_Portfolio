@@ -1,0 +1,282 @@
+/* Home Section */
+.home-section {
+    background: #072227;
+    min-height: 80vh;
+    padding: 100px 30px 20px 30px;
+    color: white;
+}
+
+
+/* Line Animation */
+.home-section .patern {
+    width: 20%;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #AEFEFF;
+    animation: patern1 5s linear alternate-reverse infinite ;
+}
+@keyframes patern1 {
+    0% { left: 0; }
+    100% { margin-left: 40%; }
+}
+
+
+/* More Menu / Side Menu */
+.home-section .more-menu {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -50px;
+    top: 40%;
+}
+.more-menu li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 15px;
+}
+.more-menu a, .home-section .media-social a {
+    text-decoration: none;
+    color: var(--color13);
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.more-menu a:hover, .home-section .media-social a:hover {
+    color: #AEFEFF;
+}
+
+
+/* Home Content */
+.home-section .home-portfolio {
+    position: absolute;
+    width: 80%;
+    height: 70vh;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+/* Background */
+.home-portfolio .bg-home {
+    background-image: url("/img/picture/bg-city.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    filter: brightness(.5);
+    box-shadow: -3px -3px 20px rgba(0, 0, 0, 0.5),3px 3px 25px rgba(0, 0, 0, 0.5);
+}
+/* Greeting */
+.home-portfolio .greeting {
+    position: absolute;
+    top: 140px;
+    padding: 0px 40px;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7), 1px 1px 3px black;
+    z-index: 5;
+    cursor: default;
+}
+.home-portfolio .greeting .name-user { 
+    display: flex;
+}
+.home-portfolio .greeting h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+.home-portfolio .greeting span .name {
+    position: relative;
+    padding-right: 20px;
+    color: var(--color13);
+    animation: typing 8s steps(19) infinite;
+    overflow: hidden;
+}
+@keyframes typing {
+    0% { width: 0; }
+    /* 30% { width: 554px; } */
+    30% { width: 523px; }
+}
+.home-portfolio .greeting span .name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--color13);
+    animation: blinkCursor .8s steps(10) infinite;
+}
+@keyframes  blinkCursor {
+    0%,75% { opacity: 1; }
+    76%,100% { opacity: 0; }
+}
+.home-portfolio .greeting .space {
+    opacity: 0;
+}
+.home-portfolio .greeting h4 {
+    font-weight: 600;
+}
+.home-portfolio .greeting h4 span {
+    color: var(--color13);
+}
+/* Button to Portfolio */
+.home-portfolio .greeting button {
+    background: none;
+    border: 4px solid white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px black, 1px 1px 5px black;
+    transition: .5s;
+}
+.home-portfolio .greeting button:hover {
+    transform: scale(1.03);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* Picture */
+.home-portfolio .pict-home {
+    position: absolute;
+    height: 90%;
+    width: 35%;
+    right: 50px;
+    bottom: 0;
+}
+.home-portfolio .pict-home .line {
+    width: 50vh;
+    z-index: 2;
+}
+.home-portfolio .pict-home .image-pro {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.home-portfolio .pict-home .image-pro img {
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Media Social */
+.home-section .media-social {
+    position: absolute;
+    right: 30px;
+    top: 30%;
+}
+.home-section .media-social li {
+    list-style-type: none;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+
+
+/* --------------- Responsive --------------- */
+
+
+
+/* --------------- Mobile --------------- */
+
+@media only screen and (max-width: 600px) { 
+    /* ----- Home Section ----- */
+    .home-section {
+        padding: 0px 10px 20px 10px;
+    }
+    .home-section .home-portfolio {
+        width: 100%;
+        height: 100vh;
+        margin-top: -20px;
+    }
+
+
+    /* ----- Line Decoration ----- */
+    .home-section .patern {
+        display: none;
+    }
+
+
+    /* ----- More Menu / Side Menu ----- */
+    .home-section .more-menu, .home-section .media-social {
+        display: none;
+    }
+
+
+    /* ----- Content Home ------ */
+    /*  Background */
+    .home-portfolio .bg-home {
+        width: 100%;
+        height: 80vh;
+        box-shadow: none;
+    }
+
+    .home-portfolio .pict-home .line {
+        display: none;
+    }
+
+    /* Picture Profile */
+    .home-portfolio .pict-home {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .home-portfolio .pict-home .image-pro {
+        width: 250px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 5px solid var(--color13);
+        border-radius: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        transition: .5s;
+        margin-top: 50px;
+    }
+    .home-portfolio .pict-home .image-pro img {
+        object-fit: cover;
+        object-position: center top;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    /* Greeting */
+    .home-portfolio .greeting {
+        position: absolute;
+        width: 100%;
+        max-width: 600px;
+        top: 45vh;
+        padding: 30px 15px 100px 15px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-top: 2px solid var(--color13);
+        background-image: linear-gradient(to bottom, #072227 40%, #072227,  transparent);
+        margin-top: 100px;
+        text-align: center;
+    }
+    .home-portfolio .greeting span .name {
+        padding-right: 0px;
+        animation: none !important;
+        overflow: none;
+    }
+    @keyframes typing {
+        0% { width: 0; }
+        100% { width: 0px; }
+    }
+    .home-portfolio .greeting span .name::before {
+        display: none;
+    }
+    .home-portfolio .greeting .text-mobile {
+        display: none;
+    }
+    .home-portfolio .greeting h6 {
+        display: none;
+    }
+    .home-portfolio .greeting h4  {
+        text-align: left;
+    }
+
+    /* Button to Portfolio */
+    .home-portfolio .greeting button {
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,247 @@
+/* ----- Contact Section ----- */
+.contact-section {
+    min-height: 100vh;
+    background: rgb(20, 20, 20);
+}
+.contact-section .contact {
+    padding: 30px 100px 0px 100px;
+}
+
+
+/* ----- Title Contact ----- */
+.contact-section .title-contact {
+    width: fit-content;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+.contact-section .title-contact::before {
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    margin-left: -15px;
+    margin-top: 25px;
+}
+.contact-section .title-contact h1 {
+    font-weight: 600;
+    color: white;
+    transition: .5s;
+    animation: gradient 3s linear alternate infinite;
+}
+@keyframes gradient {
+    0% { color: white; }
+    50% { color: #AEFEFF; }
+    100% { color: #35858b; }
+}
+
+
+/* ----- Content ----- */
+.content-contact {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+}
+
+
+/* ----- Form Contact ----- */
+.content-contact .form-contact {
+    flex: 50%;
+    padding-right: 50px;
+    border-right: 2px solid white;
+}
+/* Label */
+.form-contact label {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 10px 0px 5px 20px;
+}
+/* Form Input */
+.form-contact input, .form-contact textarea {
+    width: 100%;
+    background: none;
+    border: 2px solid #35858b;
+    padding: 5px 15px;
+    color: white;
+    font-size: 20px;
+}
+.form-contact input:focus, .form-contact textarea:focus {
+    outline: 2px solid #AEFEFF;
+}
+.form-contact textarea {
+    height: 200px;
+}
+/* Button Submit */
+.form-contact button {
+    background: #35858b;
+    color: #072227;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 3px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 55px;
+    transition: .5s;
+}
+.form-contact button:hover {
+    background: #AEFEFF;
+    transform: scale(1.03);
+}
+
+
+/* ----- Social Media ----- */
+.content-contact .medsos-contact {
+    color: white;
+    flex: 50%;
+    padding-left: 50px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+/* Title Portfolio */
+.medsos-contact h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/* Text */
+.medsos-contact p {
+    color: rgba(255, 255, 255, 0.7);
+}
+.medsos-contact p .link-1 {
+    color: #AEFEFF;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .5s;
+}
+.medsos-contact p .link-1:hover, .medsos-contact .medsos-logo a:hover {
+    color: #AEFEFF;
+    border-bottom: 1px solid #AEFEFF;
+}
+/* Social Media Logo */
+.medsos-contact .medsos-logo {
+    text-align: center;
+    margin-top: 50px;
+}
+.medsos-contact .medsos-logo li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+.medsos-contact .medsos-logo a {
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+
+/* Line Decoration */
+.medsos-contact .line1, .medsos-contact .line2 {
+    width: 150px;
+    height: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.medsos-contact .line1 {
+    background-color: #AEFEFF;
+    animation: lineFooter 3s linear alternate-reverse infinite;
+}
+.medsos-contact .line2 {
+    background-color: #35858b;
+    animation: lineFooter 3s linear alternate infinite;
+}
+@keyframes lineFooter {
+    0% { margin-left: 0; }
+    100% { margin-left: 100%; }
+}
+
+
+/* Footer Copyright */
+.contact-section .footer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: #35858b;
+}
+.contact-section .footer p {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+
+/* --------------- Responsive --------------- */
+
+
+
+/* --------------- Mobile --------------- */
+
+@media only screen and (max-width: 600px) { 
+    /* ----- Contact Section ----- */
+    .contact-section .contact {
+        padding: 70px 20px 0px 20px;
+    }
+    
+
+    /* ----- Title Contact ----- */
+    .contact-section .title-contact {
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 50px;
+    }
+    .contact-section .title-contact::before {
+        margin-top: 15px;
+    }
+
+
+    /* ----- Content Contact ----- */
+    .content-contact {
+        width: 100%;
+        display: block;
+    }
+
+
+    /* ----- Form Contact ----- */
+    .content-contact .form-contact {
+        padding-right: 0px;
+        padding-bottom: 30px;
+        border-right: none;
+        border-bottom: 1px solid grey;
+    }
+    .form-contact button {
+        padding: 5px;
+        font-weight: 800;
+    }
+
+
+    /* ----- Sosmed Contact ----- */
+    .content-contact .medsos-contact {
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .medsos-contact .medsos-logo li {
+        padding-right: 30px;
+    }
+    .medsos-contact .medsos-logo a {
+        font-size: 25px;
+    }
+    
+
+    /* ----- Line Decoration ----- */
+    .medsos-contact .line2 {
+        margin-bottom: 50px;
+    }
+    @keyframes lineFooter {
+        0% { margin-left: 0; }
+        100% { margin-left: 50%; }
+    }
+
+
+    /* ----- Copyright ----- */
+    .contact-section .footer {
+        margin-bottom: 55px;
+    }
+}

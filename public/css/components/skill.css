@@ -1,0 +1,268 @@
+/* ----- Skill Section ----- */
+.skill-section {
+    min-height: 100vh;
+    background: #072227;
+    padding-top: 50px;
+}
+
+
+/* ----- Title Skill ----- */
+.skill-section .title-skill {
+    width: fit-content;
+    background: #35878d;
+}
+.skill-section .title-skill h2 {
+    color: white;
+    font-weight: 600;
+    padding: 6px 40px 6px 110px;
+}
+
+
+/* ----- Border Decoration ----- */
+.skill-section .line1, .skill-section .line2 {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+}
+/* Border Top Right */
+.skill-section .line1 {
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    right: 200px;
+}
+/* Border Bottom Left */
+.skill-section .line2 {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    left: 200px;
+    margin-top: -100px;
+}
+
+
+/* ----- Content Skill ----- */
+.skill-section .content-skill {
+    width: 70%;
+    margin: 0 auto;
+    padding: 80px 50px 100px 50px;
+    height: auto;
+    display: flex;
+}
+/* Skill */
+.skill-section .skill {
+    margin: 0 auto;
+    position: relative;
+}
+/* Circle */
+.skill-section .outer {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
+                -3px -3px 8px -1px rgba(225, 225, 225, 0.3);
+}
+.skill-section .inner {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -4px -4px 6px -1px rgba(0, 0, 0, 0.5),
+                inset -4px -4px 6px -1px rgba(225, 225, 225, 0.4),
+                -.5px -.5px 0px rgba(225, 225, 225, .8),
+                .5px .5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+/* Number Percent */
+.skill-section #number, .skill-section #number2, .skill-section #number3 {
+    font-weight: 600;
+    color: white;
+}
+/* Line Circle Color */
+.skill-section .skill-1 circle,
+.skill-section .skill-2 circle, 
+.skill-section .skill-3 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+.skill-section svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+/* Animation Circle */
+.skill-section .skill-1 circle {
+    animation: rotate 2s linear forwards;
+}
+@keyframes rotate {
+    100% { stroke-dashoffset: 100; }
+}
+.skill-section .skill-2 circle {
+    animation: rotate2 2s linear forwards;
+}
+@keyframes rotate2 {
+    100% { stroke-dashoffset: 125; }
+}
+.skill-section .skill-3 circle {
+    animation: rotate3 2s linear forwards;
+}
+@keyframes rotate3 {
+    100% { stroke-dashoffset: 300; }
+}
+/* Name Skill */
+.skill-section .skill-name {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.skill-section .skill-name h3 {
+    font-weight: 600;
+    color: #AEFEFF;
+}
+
+
+/* ----- Learn More ----- */
+.learn-more .title-learn {
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+/* Theory */
+.learn-more .program-learn {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 100px 10px 100px;
+}
+.program-learn .program {
+    width: 100%;
+    height: auto;
+    border: 3px solid #35878d;
+    margin-bottom: 50px;
+    padding: 30px;
+    display: flex;
+}
+/* Picture Learn */
+.program .pict-program {
+    flex: 40%;
+}
+.program .pict-program img {
+    width: 90%;
+    transition: .5s;
+}
+.program .pict-program img:hover {
+    transform: scale(1.04);
+}
+/* Information Learn */
+.program .text-program {
+    flex: 60%;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.program .text-program h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* --------------- Responsive --------------- */
+
+
+
+
+
+/* --------------- Mobile --------------- */
+
+@media only screen and (max-width: 600px) {
+    /* ----- Skill Section ----- */
+    .skill-section {
+        padding-top: 70px;
+    }
+
+
+    /* ----- Title Skill ----- */
+    .skill-section .title-skill h2 {
+        padding: 6px 30px 6px 60px;
+    }
+
+
+    /* ----- Border Decoration ----- */
+    .skill-section .line1, .skill-section .line2 {
+        width: 100px;
+        height: 50px;
+    }
+    .skill-section .line1 {
+        right: 20px;
+    }
+    .skill-section .line2 {
+        left: 20px;
+    }
+
+
+    /* ----- Content Skill ----- */
+    .skill-section .content-skill {
+        width: 100%;
+        padding: 80px 20px 50px 20px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Skill */
+    .skill-section .skill {
+        margin-bottom: 50px;
+        border-bottom: 1px solid grey;
+        padding-bottom: 50px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    .skill-section .skill-3 {
+        border-bottom: none;
+    }
+    .skill-section .outer {
+        margin: 0 auto;
+    }
+    .skill-section svg { 
+        position: relative;
+        margin: 0 auto ;
+        margin-top: -205px;
+    }
+
+    /* Learn More */
+    .learn-more .title-learn { 
+        margin-top: 50px;
+    }
+    .learn-more .program-learn {
+        width: 100%;
+        padding: 50px 20px 10px 20px;
+    }
+    .program-learn .program {
+        width: 100%;
+        padding: 20px;
+        display: block;
+        border-radius: 20px;
+    }
+    .program .pict-program {
+        width: 100%;
+        text-align: center;
+    }
+    .program .pict-program img {
+        position: relative;
+        width: 70%;
+        animation: pictScale 1s linear alternate infinite;
+    }
+    @keyframes pictScale {
+        0% { transform: scale(1.1); }
+        100% { transform: scale(1.04); }
+    }
+    .program .text-program h2 {
+        margin-top: 20px;
+    }
+}

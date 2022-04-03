@@ -1,0 +1,193 @@
+/* ----- Project Section ----- */
+.project-section {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, transparent, #AEFEFF);
+    transition: .5s !important;
+}
+
+
+/* ----- Title Project ----- */
+.project-section .header {
+    width: 100%;
+    padding-top: 50px;
+}
+/* Title */
+.project-section .header .logo{
+    background-color: var(--color2);
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6px 40px 2px 40px;
+    position: relative;
+    z-index: 55;
+    transition: .5s;
+}
+.project-section .header .logo h3 {
+    color: var(--color15);
+    font-weight: 600;
+    transition: .5s;
+}
+/* Line Top & right */
+.project-section .header .line {
+    width: 100px;
+    height: 50px;
+    border-top: 3px solid var(--color3);
+    border-right: 3px solid var(--color3);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 50;
+    margin-top: -10px;
+    margin-left: 70px;
+    transition: .5s;
+    animation: lineTitle 1s linear alternate infinite;
+}
+@keyframes lineTitle {
+    from { margin-left: 70px; }
+    to { margin-left: 80px; }
+}
+/* Line Box bottom */
+.project-section .header .box {
+    width: 220px;
+    height: 50px;
+    border: 3px solid #35858B;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 50;
+    margin-top: -40px;
+    margin-left: -10px;
+    transition: .5s;
+    animation: boxTitle 1s linear alternate infinite ;
+}
+@keyframes boxTitle {
+    from { margin-left: -10px; }
+    to { margin-left: -20px; }
+}
+
+
+/* ----- Card Portfolio Project ----- */
+.portfolio-project {
+    padding: 100px 150px 50px 150px;
+}
+
+
+/* Card */
+.portfolio-project .card {
+    background-color: #072227;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 3px black, 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+.portfolio-project .card:hover {
+    margin-top: -10px;
+}
+
+/* Card Picture */
+.portfolio-project .card .card-img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: .5s;
+}
+.portfolio-project .card .card-img img {
+    transition: .5s;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.portfolio-project .card .card-img img:hover {
+   transform: scale(1.05);
+}
+
+/* Card Title Porject */
+.portfolio-project .card-body h4 {
+    text-align: center;
+    color: #AEFEFF !important;
+    font-weight: 600;
+}
+
+/* Card Button Action */
+.portfolio-project .card-button {
+    width: 100%;
+    display: flex;
+    padding: 0px 5px 10px 5px;
+}
+.portfolio-project .card-button a {
+    width: 100%;
+    margin: 0px 5px;
+}
+.portfolio-project .card-button button {
+    width: 100%;
+    padding: 3px 0px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: .5s;
+}
+.portfolio-project .card-button button:hover {
+    transform: scale(1.03);
+}
+/* Button Demo */
+.portfolio-project .card-button .btn-d {
+    background-color: #AEFEFF;
+    color: #072227;
+}
+/* Button Git Hub */
+.portfolio-project .card-button .btn-g {
+    background: transparent;
+    border: 3px solid #AEFEFF;
+    color: #AEFEFF;
+}
+
+
+/* --------------- Responsive --------------- */
+
+
+@media only screen and (max-width: 1000px) {
+    .portfolio-project {
+        padding: 100px 50px 50px 50px;
+    }
+}
+
+
+
+/* --------------- Mobile --------------- */
+
+@media only screen and (max-width: 600px) {
+    /* ----- Project Section ----- */
+    .project-section {
+        padding-top: 30px;
+    }
+
+    /* ----- Card Project ----- */
+    .portfolio-project {
+        padding: 80px 15px 50px 15px;
+    }
+
+    /* Card */
+    .portfolio-project .col { 
+        margin-bottom: 30px;
+    }
+    .portfolio-project .card { 
+        border-radius: 15px;
+    }
+
+    /* Card Image */
+    .portfolio-project .card:hover {
+        margin-top: 0px;
+    }
+    .portfolio-project .card .card-img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .portfolio-project .card .card-img img:hover {
+        transform: scale(1.01);
+    }
+}
