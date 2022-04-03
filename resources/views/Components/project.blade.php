@@ -24,7 +24,7 @@
                         <p class="card-text">This is my main portfolio project. made using HTML, CSS & JavaScript, took 5 days to make this and 2 days to perfect.</p>
                     </div>
                     <div class="card-button">
-                        <a href="" target="_blank"><button class="btn-d">Demo</button></a>
+                        <a href="https://rz-portfolio.herokuapp.com/" target="_blank"><button class="btn-d">Demo</button></a>
                         <a href="https://github.com/richalzackyaflacha/Rz_Portfolio" target="_blank"><button class="btn-g">Git Hub</button></a>
                     </div>
                 </div>
