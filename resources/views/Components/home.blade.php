@@ -19,7 +19,7 @@
             <h6>Hello, This is my Portfolio</h6>
             <span class="name-user">
                 <h1>I'm</h1><span class="space">o</span>
-                <h1 class="name">Richal<span class="text-mobile"><span class="space">,</span>Zacky<span class="space">,</span>Aflacha</span></h1>
+                <h1 class="name">Richal<span class="space">,</span>Zacky<span class="text-mobile"><span class="space">,</span>Aflacha</span></h1>
             </span>
             <h4>I'm a <span>Frontend Developer</span> & <span>Web Designer</span></h4>
             <h6>Let's check my Portfolio</h6>
