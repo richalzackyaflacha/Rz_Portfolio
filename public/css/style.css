@@ -252,9 +252,9 @@ img.modal-content {
 /* --------------- Mobile --------------- */
 
 @media only screen and (max-width: 600px) {
-    body {
+    html, body {
         overflow-x: hidden !important;
-        
+        max-width: 100%;
     }
 
     

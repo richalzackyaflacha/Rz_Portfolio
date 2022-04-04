@@ -192,15 +192,8 @@
         display: block;
     }
 
-
-    /* ----- Line Decoration ----- */
-    .home-section .patern {
-        display: none;
-    }
-
-
-    /* ----- More Menu / Side Menu ----- */
-    .home-section .more-menu, .home-section .media-social {
+    /* ----- More Menu / Side Menu, Line Decoration ----- */
+    .home-section .more-menu, .home-section .media-social, .home-section .patern {
         display: none;
     }
 
@@ -231,8 +224,6 @@
         background-color: rgba(0, 0, 0, 0.6);
         border: 5px solid var(--color13);
         border-radius: 50%;
-        /* left: 50%;
-        transform: translate(-50%); */
         margin: 0 auto;
         position: relative;
         transition: .5s;
