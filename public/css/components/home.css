@@ -181,12 +181,15 @@
 @media only screen and (max-width: 600px) { 
     /* ----- Home Section ----- */
     .home-section {
-        padding: 0px 10px 20px 10px;
+        padding: 0px 0px 20px 0px;
+        background: none;
     }
     .home-section .home-portfolio {
+        position: relative;
         width: 100%;
         height: 100vh;
         margin-top: -20px;
+        display: block;
     }
 
 
@@ -216,9 +219,11 @@
 
     /* Picture Profile */
     .home-portfolio .pict-home {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        right: 0;
+        margin-top: -70vh;
     }
     .home-portfolio .pict-home .image-pro {
         width: 250px;
@@ -226,14 +231,14 @@
         background-color: rgba(0, 0, 0, 0.6);
         border: 5px solid var(--color13);
         border-radius: 50%;
-        left: 50%;
-        transform: translate(-50%);
+        /* left: 50%;
+        transform: translate(-50%); */
+        margin: 0 auto;
+        position: relative;
         transition: .5s;
         margin-top: 50px;
     }
     .home-portfolio .pict-home .image-pro img {
-        object-fit: cover;
-        object-position: center top;
         width: 100%;
         height: 100%;
         border-radius: 50%;
