@@ -23,9 +23,9 @@
             </span>
             <h4>I'm a <span>Frontend Developer</span> & <span>Web Designer</span></h4>
             <h6>Let's check my Portfolio</h6>
-            <a href="#project">
-                <button>Portfolio</button>
-            </a>
+            <div class="button-pt">
+                <a href="#project"><button>Portfolio</button></a>
+            </div>
         </div>
 
         {{-- Decoration --}}

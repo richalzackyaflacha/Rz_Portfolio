@@ -171,7 +171,67 @@
 }
 
 
-/* --------------- Responsive --------------- */
+/* --------------- Tablet --------------- */
+@media only screen and (max-width: 900px) { 
+    /* ----- Home Section ----- */
+    .home-section .home-portfolio {
+        display: block;
+    }
+
+
+    /* ----- Content Picture ----- */
+    .home-portfolio .pict-home .line {
+        display: none;
+    }
+    /* Picture Profile */
+    .home-portfolio .pict-home {
+        top: 0;
+        width: 100%;
+        height: fit-content;
+        right: 0;
+    }
+    .home-portfolio .pict-home .image-pro {
+        width: 350px;
+        height: 350px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 5px solid var(--color13);
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        transition: .5s;
+        margin-top: 50px;
+    }
+    .home-portfolio .pict-home .image-pro img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+
+    /* ----- Content Greeting ----- */
+    .home-portfolio .greeting {
+        top: 40vh;
+        width: 100%;
+    }
+    .home-portfolio .greeting span .name {
+        animation: typing 8s steps(13) infinite;
+    }
+    @keyframes typing {
+        0% { width: 0; }
+        30% { width: 330px; }
+    }
+    .home-portfolio .greeting .text-mobile {
+        display: none;
+    }
+    .home-portfolio .greeting .button-pt {
+        width: 100%;
+        text-align: center;
+    }
+    .home-portfolio .greeting button {
+        padding: 10px 30px;
+        margin-top: 30px;
+    }
+}
 
 
 
@@ -205,9 +265,6 @@
         box-shadow: none;
     }
 
-    .home-portfolio .pict-home .line {
-        display: none;
-    }
 
     /* Picture Profile */
     .home-portfolio .pict-home {
@@ -277,5 +334,6 @@
     .home-portfolio .greeting button {
         padding: 10px 20px;
         border: 3px solid var(--color13);
+        margin-top: 15px;
     }
 }

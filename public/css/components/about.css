@@ -109,47 +109,76 @@
 }
 
 
-/* --------------- Responsive --------------- */
+/* --------------- Tablet --------------- */
 
-@media only screen and (max-width: 1000px) {
-    .outer-about {
-        padding-top: 10vh;
-    } 
+@media only screen and (max-width: 900px) {
+    /* ----- About Section ----- */
     .about-section {
-        display: block;
-        min-height: auto;
-        padding: 150px 50px 100px 50px;
-    }
-    .about-section .content-pict {
         height: auto;
-        padding-top: 0;
+        display: block;
+        padding: 100px 50px 100px 50px;
+    }
+    
+    
+    /* ----- Content Picture ----- */
+    .about-section .content-pict {
+        flex: none;
         width: 100%;
+        height: auto;
+        padding-top: 10vh;
     }
+    /* Box Color Bottom */
     .content-pict .box-1 {
-        height: 400px;
         width: 80%;
-    }
-    .content-pict .box-2 {
-        position: absolute;
-        right: 50px;
         height: 400px;
-        margin-top: -550px;
     }
+    /* Line Box Top */
+    .content-pict .box-2 {
+        width: 80%;
+        height: 400px;
+        position: absolute;
+        margin-top: -500px;
+        right: 0;
+    }
+    /* Picture About */
     .content-pict .image-about {
         width: 80%;
         height: 400px;
-        margin-top: -470px;
+        margin-top: -450px;
         margin-left: 50%;
         transform: translate(-50%);
     }
-    .about-section .content-about {
-        padding: 0px;
-        height: auto;
-        margin-top: 160px;
+    .content-pict .image-about img:hover {
+        transform: scale(1.03);
     }
+    
+    
+    /* ----- Content Text ----- */
+    .about-section .content-about {
+        flex: none;
+        width: 100%;
+        height: auto;
+        padding: 100px 20px 0px 20px;
+    }
+    /* Text About */
     .content-about .text-about {
         width: 100%;
-        padding: 10px 50px 50px 50px;
+    }
+    
+    
+    /* ----- Line Animation ----- */
+    .content-about .line-about {
+        width: 30%;
+        height: 15px;
+        border-radius: 20px;
+        background-color: var(--color2);
+        margin-top: 80px;
+        animation: patern2 4s linear alternate-reverse infinite ;
+        transition: .5s;
+    }
+    @keyframes patern2 {
+        0% { left: 0; }
+        100% { margin-left: 50%; }
     }
 }
 
@@ -165,17 +194,14 @@
 
     /* ----- Content Picture ----- */
     .about-section .content-pict { 
-        height: auto;
-        margin-bottom: -50px;
+        margin-top: -150px;
     }
     .content-pict .box-1 {
         height: 200px;
-        width: 80%;
     }
     .content-pict .box-2 {
         position: absolute;
         right: 0px;
-        width: 80%;
         height: 200px;
         margin-top: -250px;
     }
@@ -192,9 +218,7 @@
 
     /* ----- Content Text ----- */
     .about-section .content-about {
-        width: 100%;
-        height: auto;
-        padding: 0px;
+        padding: 90px 0px 0px 0px;
     }
     /* Title About */
     .content-about .title-about {
@@ -203,9 +227,5 @@
     /* Text About */
     .content-about .text-about {
         padding: 10px 10px 20px 15px;
-    }
-    .content-about .text-about p {
-        letter-spacing: 1px;
-        font-weight: 600;
     }
 }

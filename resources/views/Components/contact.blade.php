@@ -20,7 +20,9 @@
                     <label for="message">Message</label><br>
                     <textarea name="message" id="message" placeholder="Message..." required></textarea>
 
-                    <button type="submit">Submit</button>
+                    <div class="button-tab">
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
 

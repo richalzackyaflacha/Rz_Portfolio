@@ -172,10 +172,44 @@
 }
 
 
-/* --------------- Responsive --------------- */
+/* --------------- Tablet --------------- */
+
+@media only screen and (max-width: 900px) {
+    /* ----- Skill Section ----- */
+    .skill-section {
+        padding-top: 80px;
+    }
 
 
+    /* ----- Border Decoration ----- */
+    .skill-section .line1 {
+        right: 40px;
+    }
+    .skill-section .line2 {
+        left: 40px;
+    }
 
+
+    /* ----- Content Skill ----- */
+    .skill-section .content-skill {
+        width: 100%;
+        padding: 80px 20px 80px 20px;
+    }
+
+
+    /* ----- Learn More ----- */
+    .learn-more .title-learn {
+        width: 100%;
+    }
+    /* Theory */
+    .learn-more .program-learn {
+        width: 100%;
+        padding: 50px 50px 10px 50px;
+    }
+    .program .pict-program img:hover {
+        transform: scale(1.04);
+    }
+}
 
 
 /* --------------- Mobile --------------- */
@@ -208,7 +242,6 @@
 
     /* ----- Content Skill ----- */
     .skill-section .content-skill {
-        width: 100%;
         padding: 80px 20px 50px 20px;
         display: block;
         text-align: center;
@@ -240,7 +273,6 @@
         margin-top: 50px;
     }
     .learn-more .program-learn {
-        width: 100%;
         padding: 50px 20px 10px 20px;
     }
     .program-learn .program {
