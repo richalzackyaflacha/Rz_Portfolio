@@ -33,6 +33,22 @@
             <div class="col" data-aos="flip-up" data-aos-duration="1500">
                 <div class="card">
                     <div class="card-img">
+                        <img class="myImg" src="{{ asset('img/project/project3.png') }}" alt="Rz Qur'an">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Rz Qur'an</h4>
+                        <p class="card-text">Rz Qur'an is a digital Qur'an that I made during the month of Ramadan.</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="https://rz-quran.vercel.app/" target="_blank"><button class="btn-d">Demo</button></a>
+                        <a href="https://github.com/richalzackyaflacha/Rz-Quran" target="_blank"><button class="btn-g">Git Hub</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                <div class="card">
+                    <div class="card-img">
                         <img class="myImg" src="{{ asset('img/project/project2.png') }}" alt="Rz Cafe">
                     </div>
                     <div class="card-body">
