@@ -117,7 +117,20 @@
                 <div class="text-program">
                     <h2>React JS</h2>
                     <p>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.</p>
-                    <p>For now i'm using React JS to learn javascript, and also to make UI</p>
+                    <p>For now i'm using React JS to learn javascript, and also to make UI.</p>
+                </div>
+            </div>
+
+             {{-- Flutter --}}
+             <div class="program" data-aos="flip-up" data-aos-duration="1500">
+                <div class="pict-program">
+                    <img src="{{ asset('img/icon/flutter.png') }}" alt="React JS">
+                </div>
+
+                <div class="text-program">
+                    <h2>Flutter</h2>
+                    <p>Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.</p>
+                    <p>I use Flutter to learn to make Mobile UI.</p>
                 </div>
             </div>
         </div>
