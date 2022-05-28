@@ -77,7 +77,7 @@
     background-color: #072227;
     color: white;
     text-align: center;
-    box-shadow: 0 4px 3px black, 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 5px black, 0 8px 20px rgba(0, 0, 0, 0.5);
     transition: .5s;
 }
 .portfolio-project .card:hover {
@@ -137,6 +137,7 @@
 /* Button Demo */
 .portfolio-project .card-button .btn-d {
     background-color: #AEFEFF;
+    border: 3px solid #AEFEFF;
     color: #072227;
 }
 /* Button Git Hub */
