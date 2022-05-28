@@ -95,19 +95,6 @@
 
         {{-- Program --}}
         <div class="program-learn">
-            {{-- Adobe XD --}}
-            <div class="program" data-aos="flip-up" data-aos-duration="1500">
-                <div class="pict-program">
-                    <img src="{{ asset('img/icon/xd.png') }}" alt="Adobe XD">
-                </div>
-
-                <div class="text-program">
-                    <h2>Adobe XD</h2>
-                    <P>Adobe XD is a vector-based user experience design tool for web apps and mobile apps, developed and published by Adobe Inc.</P>
-                    <p>I use this software to design the appearance of the website that I will make.</p>
-                </div>
-            </div>
-
             {{-- React JS --}}
             <div class="program" data-aos="flip-up" data-aos-duration="1500">
                 <div class="pict-program">
@@ -121,8 +108,8 @@
                 </div>
             </div>
 
-             {{-- Flutter --}}
-             <div class="program" data-aos="flip-up" data-aos-duration="1500">
+            {{-- Flutter --}}
+            <div class="program" data-aos="flip-up" data-aos-duration="1500">
                 <div class="pict-program">
                     <img src="{{ asset('img/icon/flutter.png') }}" alt="React JS">
                 </div>
@@ -131,6 +118,32 @@
                     <h2>Flutter</h2>
                     <p>Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.</p>
                     <p>I use Flutter to learn to make Mobile UI.</p>
+                </div>
+            </div>
+
+            {{-- Adobe XD --}}
+            <div class="program" data-aos="flip-up" data-aos-duration="1500">
+                <div class="pict-program">
+                    <img src="{{ asset('img/icon/xd.png') }}" alt="Adobe XD">
+                </div>
+
+                <div class="text-program">
+                    <h2>Adobe XD</h2>
+                    <P>Adobe XD is a vector-based user experience design tool for web apps and mobile apps, developed and published by Adobe Inc.</P>
+                    <p>I use this software to design the appearance of the website that I will make.</p>
+                </div>
+            </div>
+
+            {{-- Laravel --}}
+            <div class="program" data-aos="flip-up" data-aos-duration="1500">
+                <div class="pict-program">
+                    <img src="{{ asset('img/icon/laravel.png') }}" alt="React JS">
+                </div>
+
+                <div class="text-program">
+                    <h2>Laravel</h2>
+                    <p>Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony.</p>
+                    <p>I use Laravel to create the UI when using the PHP programming language, like this Portfolio.</p>
                 </div>
             </div>
         </div>
