@@ -137,7 +137,7 @@
             {{-- Laravel --}}
             <div class="program" data-aos="flip-up" data-aos-duration="1500">
                 <div class="pict-program">
-                    <img src="{{ asset('img/icon/laravel.png') }}" alt="React JS">
+                    <img src="{{ asset('img/icon/Laravel.png') }}" alt="React JS">
                 </div>
 
                 <div class="text-program">
