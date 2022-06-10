@@ -13,7 +13,7 @@
 
     {{-- Card Project --}}
     <div class="portfolio-project">
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 g-4">
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 g-4 project-card">
             <div class="col" data-aos="flip-up" data-aos-duration="1500">
                 <div class="card">
                     <div class="card-img">

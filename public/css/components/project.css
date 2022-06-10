@@ -83,6 +83,9 @@
 .portfolio-project .card:hover {
     margin-top: -10px;
 }
+.portfolio-project .project-card {
+    row-gap: 50px !important;
+}
 
 /* Card Picture */
 .portfolio-project .card .card-img {
