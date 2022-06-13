@@ -1,7 +1,7 @@
 /* ----- Project Section ----- */
 .project-section {
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, transparent, #AEFEFF);
+    background-image: linear-gradient(to bottom, transparent, var(--color10));
     transition: .5s !important;
 }
 
